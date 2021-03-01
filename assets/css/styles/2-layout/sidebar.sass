@@ -1,0 +1,41 @@
+@import '../1-base/colors.sass'
+
+.sidebar-container
+  // background: $black
+  width: 300px
+  padding: 50px
+  font-size: 1.2rem
+  .sidebar
+    padding: 25px 21px 18px 25px
+    background: rgba($white, .85)
+    &--title
+      margin-bottom: 4rem
+      &__logo
+        img
+          width: 110px
+      &__text
+        
+        p
+          margin: 0
+
+    &--navigation
+      ul.menu
+        list-style: none
+        padding: 0
+        font-weight: bold
+        line-height: 1.8
+        & > li.menu-item 
+          .sub-menu
+            list-style: none
+            display: none
+          &:hover > .sub-menu
+            display: block
+          
+        .current-menu-item a
+          color: $primary
+      
+      .small-menu
+        margin-top: 4rem
+        font-size: .9rem
+    a
+      text-decoration: none    

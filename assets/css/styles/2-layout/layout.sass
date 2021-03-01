@@ -1,0 +1,43 @@
+@import '../1-base/colors.sass'
+@import '../1-base/fonts.sass'
+
+html
+  position: relative
+  min-height: 100%
+  padding: 0
+  margin: 0 !important
+  margin-top: 0 !important
+
+body
+  font:
+    family: 'Montserrat', sans-serif
+    size: 16px
+  color: $black
+  margin: 0 0 160px
+  padding: 0
+  height: 100%
+  overflow-y: scroll
+  background: 
+    size: cover
+    repeat: no-repeat
+    attachment: fixed
+ 
+  &.is-loaded:after
+    opacity: 1
+  #background-image
+    display: none
+a
+  color: $black
+
+.main-container
+  display: flex
+  height: 100%
+  position: relative
+
+@media(min-width: 721px)
+  #header .collapse, .overlay
+    display: none
+
+@media(max-width: 720px)
+  #navigation-sub
+    display: none
