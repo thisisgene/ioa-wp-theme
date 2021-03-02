@@ -23,7 +23,7 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
 	<script src="https://use.fontawesome.com/ddbd68e35f.js"></script>
-	<script src="/wp-content/themes/ioa-new/assets/js/script.js"></script>
+
 
 	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 	<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
@@ -57,15 +57,3 @@
 <body <?php body_class(); ?> style="background-image: url('<?php echo get_background_custom(); ?>')">
 
 	<div id="wrapper">
-		<div id="header">
-			<!-- Mobile Menu -->
-			<span class="collapse">
-				<p><button id="trigger-overlay" type="button" style="background:none;color:#fff;border:none;"><i class="fa fa-navicon fa-2x" aria-hidden="true"></i></button></p>
-			</span>
-		</div>
-		<div class="overlay overlay-slidedown">
-			<button type="button" class="overlay-close" style="background:none;color:#fff;border:none;"><i class="fa fa-close fa-2x" aria-hidden="true"></i></button>
-			<nav>
-				<?php wp_nav_menu(array('theme_location' => 'primary',)); ?>
-			</nav>
-		</div>

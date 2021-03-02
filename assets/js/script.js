@@ -1,11 +1,22 @@
-// window.addEventListener("load", event => {
-//   const image = new Image()
 
-//   image.onload = function () {
-//     // document.body.classList.add("is-loaded")
-//     document.body.style.backgroundImage = `url(${image.src})`
-//     console.log('back: ', document.body.style.backgroundImage)
-//   }
+document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.getElementById('nav-burger')
+  const nav = document.getElementById('navigation-mobile')
 
-//   image.src = document.body.dataset["bg"];
-// });
+
+  const toggleMobileMenu = () => {
+
+    if (burger.classList.contains('burger-expand')) {
+      burger.classList.remove('burger-expand')
+      nav.classList.add('collapsed')
+    } else {
+      burger.classList.add('burger-expand')
+      nav.classList.remove('collapsed')
+    }
+  }
+  console.log('LOADIT')
+  burger.addEventListener('touchstart', () => {
+    console.log('hellloo')
+    toggleMobileMenu()
+  })
+})

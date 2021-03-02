@@ -1,0 +1,77 @@
+.mobile-container
+  width: 100vw
+  .sidebar
+    background: none !important
+    // width: 100%
+    padding: 0
+    
+    &--title
+      padding: .8rem 1.3rem
+      background: rgba($white, .85)
+      margin: 0
+      display: flex
+      justify-content: space-between
+      align-items: center
+      position: relative
+      height: 75px
+      box-sizing: border-box  
+      &__logo img
+        width: 80px
+      &__burger
+        // margin-right: 1rem
+        position: relative
+        z-index: 30
+        display: block
+        cursor: pointer
+        height: 20px
+        .burger-span
+          position: relative
+          display: block
+          width: 20px
+          height: 0
+          background: $black
+          // color: $black
+          &:before
+            content: ''
+            background: inherit
+            position: absolute
+            left: 0
+            transform: translateY(7px)
+            transform-origin: center 10px
+            width: inherit
+            height: 1px
+            transition: transform 200ms ease-in-out
+          &:after
+            content: ''
+            background: inherit
+            position: absolute
+            left: 0
+            transform: translateY(13px)
+            transform-origin: center 10px             
+            width: inherit
+            height: 1px
+            transition: transform 200ms ease-in-out
+
+        &.burger-expand
+          .burger-span
+            // right: 2rem
+            // position: fixed
+            &:before
+              transform: rotateZ(45deg) translateY(10px) translateX(0)
+            &:after
+              transform: rotateZ(-45deg) translateY(10px)
+    &--navigation
+      position: fixed
+      top: 75px
+      width: 100vw
+      transform: translateX(0%)
+      background: rgba($white, .85)
+      opacity: 1
+      transition: all 200ms ease-in-out
+      padding: 1.5rem
+      ul.menu
+        margin-top: 0
+        font-size: 1.3rem
+      &.collapsed
+        opacity: 0
+        transform: translateX(150%)

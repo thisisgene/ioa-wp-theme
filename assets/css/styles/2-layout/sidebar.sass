@@ -1,41 +1,91 @@
 @import '../1-base/colors.sass'
+@import '../1-base/numbers.sass'
 
 .sidebar-container
   // background: $black
+  position: relative
   width: 300px
   padding: 50px
+  top: 0
   font-size: 1.2rem
-  .sidebar
-    padding: 25px 21px 18px 25px
-    background: rgba($white, .85)
-    &--title
-      margin-bottom: 4rem
-      &__logo
-        img
-          width: 110px
-      &__text
+.sidebar
+  padding: 25px 21px 18px 25px
+  background: rgba($white, .85)
+  &--title
+    margin-bottom: 4rem
+    &__logo
+      img
+        width: 110px
+    a:hover
         
-        p
-          margin: 0
-
-    &--navigation
-      ul.menu
-        list-style: none
-        padding: 0
-        font-weight: bold
-        line-height: 1.8
-        & > li.menu-item 
-          .sub-menu
-            list-style: none
-            display: none
-          &:hover > .sub-menu
-            display: block
-          
-        .current-menu-item a
-          color: $primary
+      color: $black !important
+    &__text
       
-      .small-menu
-        margin-top: 4rem
-        font-size: .9rem
-    a
-      text-decoration: none    
+      p
+        margin: 0
+
+  &--navigation
+    ul.menu
+      list-style: none
+      padding: 0
+      font-weight: bold
+      line-height: 1.8
+      & > li.menu-item 
+        .sub-menu
+          list-style: none
+          padding: 0
+          display: none
+        // &:hover > .sub-menu
+        //   display: block
+        
+      .current-menu-item, .current-menu-parent
+        
+        .sub-menu
+          display: block !important
+          a
+            color: $black
+            font-weight: normal
+            &:hover
+              color: $primary
+              opacity: .8
+          .current-menu-item
+            a
+              color: $primary
+        a
+          color: $primary
+    
+      &#menu-side-menu
+        & > li.menu-item 
+          &:first-child
+            a
+              // display: inline-block
+              display: flex
+              align-items: center
+              &:after
+                display: inline-block
+                content: '+'
+                margin-left: .5rem
+                font:
+                  size: 1.3rem
+                  weight: normal
+                position: relative
+                top: 1px
+                transition: transform 200ms ease-in-out
+              &:hover
+                &:after
+                  transform: rotate(180deg)
+              
+              
+            .sub-menu li a:after
+              content: ''
+
+    .small-menu
+      margin-top: 4rem
+      font-size: .9rem
+
+  a
+    text-decoration: none
+    transition: all 200ms ease-in-out
+    &:hover
+      color: $primary
+      opacity: .8

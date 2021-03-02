@@ -1,4 +1,5 @@
 @import '../1-base/colors.sass'
+@import '../1-base/numbers.sass'
 @import '../1-base/fonts.sass'
 
 html
@@ -13,10 +14,10 @@ body
     family: 'Montserrat', sans-serif
     size: 16px
   color: $black
-  margin: 0 0 160px
+  margin: 0 0 $footer-height
   padding: 0
   height: 100%
-  overflow-y: scroll
+  // overflow-y: scroll
   background: 
     size: cover
     repeat: no-repeat
@@ -32,12 +33,22 @@ a
 .main-container
   display: flex
   height: 100%
+  // width: 100vw
   position: relative
 
-@media(min-width: 721px)
-  #header .collapse, .overlay
+@media(min-width: $mobile-before-break-tablet)
+  .mobile-container
     display: none
 
-@media(max-width: 720px)
-  #navigation-sub
+@media(max-width: $mobile-break-tablet)
+  .sidebar-container, .sidebar-container > .sidebar
     display: none
+  
+  .main-container
+    display: block
+  
+  .footer // just for dev
+    max-width: 100% !important
+    overflow: hidden
+    // display: none !important
+  

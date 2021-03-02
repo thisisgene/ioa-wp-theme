@@ -8,7 +8,6 @@ Author: Elvira Stein
 Author URI: http://www.elvirastein.com
 Tags: master, university, wien, responsive, modern
 */
-@import 'assets/css/styles/1-base/normalize.css';
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 html {
   position: relative;
@@ -25,7 +24,6 @@ body {
   margin: 0 0 160px;
   padding: 0;
   height: 100%;
-  overflow-y: scroll;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -47,63 +45,196 @@ a {
   position: relative;
 }
 
-@media (min-width: 721px) {
-  #header .collapse, .overlay {
+@media (min-width: calc(950px + 1px)) {
+  .mobile-container {
     display: none;
   }
 }
-@media (max-width: 720px) {
-  #navigation-sub {
+@media (max-width: 950px) {
+  .sidebar-container, .sidebar-container > .sidebar {
     display: none;
+  }
+
+  .main-container {
+    display: block;
+  }
+
+  .footer {
+    max-width: 100% !important;
+    overflow: hidden;
   }
 }
 .sidebar-container {
+  position: relative;
   width: 300px;
   padding: 50px;
+  top: 0;
   font-size: 1.2rem;
 }
-.sidebar-container .sidebar {
+
+.sidebar {
   padding: 25px 21px 18px 25px;
   background: rgba(255, 255, 255, 0.85);
 }
-.sidebar-container .sidebar--title {
+.sidebar--title {
   margin-bottom: 4rem;
 }
-.sidebar-container .sidebar--title__logo img {
+.sidebar--title__logo img {
   width: 110px;
 }
-.sidebar-container .sidebar--title__text p {
+.sidebar--title a:hover {
+  color: #232323 !important;
+}
+.sidebar--title__text p {
   margin: 0;
 }
-.sidebar-container .sidebar--navigation ul.menu {
+.sidebar--navigation ul.menu {
   list-style: none;
   padding: 0;
   font-weight: bold;
   line-height: 1.8;
 }
-.sidebar-container .sidebar--navigation ul.menu > li.menu-item .sub-menu {
+.sidebar--navigation ul.menu > li.menu-item .sub-menu {
   list-style: none;
+  padding: 0;
   display: none;
 }
-.sidebar-container .sidebar--navigation ul.menu > li.menu-item:hover > .sub-menu {
-  display: block;
+.sidebar--navigation ul.menu .current-menu-item .sub-menu, .sidebar--navigation ul.menu .current-menu-parent .sub-menu {
+  display: block !important;
 }
-.sidebar-container .sidebar--navigation ul.menu .current-menu-item a {
+.sidebar--navigation ul.menu .current-menu-item .sub-menu a, .sidebar--navigation ul.menu .current-menu-parent .sub-menu a {
+  color: #232323;
+  font-weight: normal;
+}
+.sidebar--navigation ul.menu .current-menu-item .sub-menu a:hover, .sidebar--navigation ul.menu .current-menu-parent .sub-menu a:hover {
+  color: #86ae36;
+  opacity: 0.8;
+}
+.sidebar--navigation ul.menu .current-menu-item .sub-menu .current-menu-item a, .sidebar--navigation ul.menu .current-menu-parent .sub-menu .current-menu-item a {
   color: #86ae36;
 }
-.sidebar-container .sidebar--navigation .small-menu {
+.sidebar--navigation ul.menu .current-menu-item a, .sidebar--navigation ul.menu .current-menu-parent a {
+  color: #86ae36;
+}
+.sidebar--navigation ul.menu#menu-side-menu > li.menu-item:first-child a {
+  display: flex;
+  align-items: center;
+}
+.sidebar--navigation ul.menu#menu-side-menu > li.menu-item:first-child a:after {
+  display: inline-block;
+  content: "+";
+  margin-left: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: normal;
+  position: relative;
+  top: 1px;
+  transition: transform 200ms ease-in-out;
+}
+.sidebar--navigation ul.menu#menu-side-menu > li.menu-item:first-child a:hover:after {
+  transform: rotate(180deg);
+}
+.sidebar--navigation ul.menu#menu-side-menu > li.menu-item:first-child .sub-menu li a:after {
+  content: "";
+}
+.sidebar--navigation .small-menu {
   margin-top: 4rem;
   font-size: 0.9rem;
 }
-.sidebar-container .sidebar a {
+.sidebar a {
   text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+.sidebar a:hover {
+  color: #86ae36;
+  opacity: 0.8;
+}
+
+.mobile-container {
+  width: 100vw;
+}
+.mobile-container .sidebar {
+  background: none !important;
+  padding: 0;
+}
+.mobile-container .sidebar--title {
+  padding: 0.8rem 1.3rem;
+  background: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 75px;
+  box-sizing: border-box;
+}
+.mobile-container .sidebar--title__logo img {
+  width: 80px;
+}
+.mobile-container .sidebar--title__burger {
+  position: relative;
+  z-index: 30;
+  display: block;
+  cursor: pointer;
+  height: 20px;
+}
+.mobile-container .sidebar--title__burger .burger-span {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 0;
+  background: #232323;
+}
+.mobile-container .sidebar--title__burger .burger-span:before {
+  content: "";
+  background: inherit;
+  position: absolute;
+  left: 0;
+  transform: translateY(7px);
+  transform-origin: center 10px;
+  width: inherit;
+  height: 1px;
+  transition: transform 200ms ease-in-out;
+}
+.mobile-container .sidebar--title__burger .burger-span:after {
+  content: "";
+  background: inherit;
+  position: absolute;
+  left: 0;
+  transform: translateY(13px);
+  transform-origin: center 10px;
+  width: inherit;
+  height: 1px;
+  transition: transform 200ms ease-in-out;
+}
+.mobile-container .sidebar--title__burger.burger-expand .burger-span:before {
+  transform: rotateZ(45deg) translateY(10px) translateX(0);
+}
+.mobile-container .sidebar--title__burger.burger-expand .burger-span:after {
+  transform: rotateZ(-45deg) translateY(10px);
+}
+.mobile-container .sidebar--navigation {
+  position: fixed;
+  top: 75px;
+  width: 100vw;
+  transform: translateX(0%);
+  background: rgba(255, 255, 255, 0.85);
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+  padding: 1.5rem;
+}
+.mobile-container .sidebar--navigation ul.menu {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+.mobile-container .sidebar--navigation.collapsed {
+  opacity: 0;
+  transform: translateX(150%);
 }
 
 #content {
   background: rgba(255, 255, 255, 0.85);
   padding: 50px;
   margin: 50px 40px;
-  max-width: 800px;
 }
 #content h2 {
   font-size: 2rem;
@@ -127,6 +258,25 @@ a {
 }
 #content .wp-block-media-text * {
   margin: 0 !important;
+}
+@media (max-width: 950px) {
+  #content {
+    padding: 1.5rem;
+    margin: 1.5rem;
+    word-break: break-word;
+  }
+  #content h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+  #content h3 {
+    font-size: 1.3rem;
+    font-weight: normal;
+  }
+  #content p {
+    font-size: 0.9rem;
+    line-height: 1.38;
+  }
 }
 
 .footer-container {

@@ -1,5 +1,9 @@
-<?php get_header(); ?>
+<?php
 
-<?php get_sidebar(); ?>
+get_header();
 
-<?php get_footer(); ?>
+get_sidebar();
+
+include get_template_directory() . '/mobilemenu.php';
+
+get_footer();

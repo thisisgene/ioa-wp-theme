@@ -30,3 +30,11 @@ function get_background_custom()
 {
   return wp_get_attachment_url(get_theme_mod('background-image'));
 }
+
+// Load script
+function load_my_scripts()
+{
+
+  wp_enqueue_script('aio-new-script', get_template_directory_uri() . '/assets/js/script.js');
+}
+add_action('wp_enqueue_scripts', 'load_my_scripts');

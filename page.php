@@ -12,9 +12,10 @@
 get_header(); ?>
 
 <div class="main-container">
-	<?php get_sidebar(); ?>
+	<?php get_sidebar();
+	include get_template_directory() . '/mobilemenu.php';
 
-	<?php while (have_posts()) : the_post(); ?>
+	while (have_posts()) : the_post(); ?>
 		<div id="content">
 			<h2><?php the_title(); ?></h2>
 			<?php the_content(); ?>

@@ -116,15 +116,18 @@
 		"oF": 1,
 		"oS": 3
 		},
-	"/assets/css/styles/1-base/normalize.css": {
-		"aP": 1,
+	"/assets/css/styles/1-base/numbers.sass": {
+		"aP": 0,
 		"bl": 0,
-		"ft": 16,
+		"dP": 10,
+		"ec": 1,
+		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/assets/css/styles/1-base/normalize-min.css",
-		"oF": 1,
-		"oS": 3
+		"oAP": "/assets/css/styles/1-base/numbers.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
 		},
 	"/assets/css/styles/2-layout/content.sass": {
 		"aP": 0,
@@ -162,6 +165,19 @@
 		"oA": 1,
 		"oAP": "/assets/css/styles/2-layout/layout.css",
 		"oF": 1,
+		"oS": 0,
+		"sct": 0
+		},
+	"/assets/css/styles/2-layout/mobile-menu.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/css/styles/2-layout/mobile-menu.css",
+		"oF": 0,
 		"oS": 0,
 		"sct": 0
 		},
@@ -276,6 +292,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/img/toggle.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/toggle.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/assets/js/script-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -344,6 +370,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/index.php",
+		"oF": 0
+		},
+	"/mobilemenu.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/mobilemenu.php",
 		"oF": 0
 		},
 	"/page.php": {
