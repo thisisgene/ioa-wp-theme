@@ -18,11 +18,6 @@
 		<div class="ioa-bildung"><a href="http://www.bildung-ioa.at" target="_blank"><img src="https://www.ioa.at/wp-content/themes/ioa/img/ioa-bildung-logo.png" /></a></div>
 	</footer>
 </div>
-
-
-<!-- <script src="https://www.ioa.at/wp-content/themes/ioa/js/classie.js"></script>
-<script src="https://www.ioa.at/wp-content/themes/ioa/js/demo1.js"></script> -->
-<!-- <script src="/wp-content/themes/ioa-new/assets/js/script.js"></script> -->
 </body>
 
 </html>

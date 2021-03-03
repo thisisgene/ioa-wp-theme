@@ -5,12 +5,16 @@ require get_template_directory() . '/inc/api_callbacks.php';
 
 new backgroundCustomizer();
 
-// add_action('rest_api_init', function () {
-//   register_rest_route('ioa-new/v1', 'pages?slug=publikationen', array(
-//     'methods'  => 'GET',
-//     'callback' => 'get_publications'
-//   ));
-// });
+add_action('rest_api_init', function () {
+  register_rest_route('ioa-new/v1', 'pages?slug=publikationen', array(
+    'methods'  => 'GET',
+    'callback' => 'get_publications'
+  ));
+  register_rest_route('ioa-new/v1', 'pages?slug=universitaetslehrgang', array(
+    'methods'  => 'GET',
+    'callback' => 'get_universitaetslehrgang'
+  ));
+});
 
 // function get_background_image()
 // {

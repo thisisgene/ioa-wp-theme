@@ -4,9 +4,8 @@ Theme Name: Initiative Outdoor Aktivitäten 2021
 Theme URI: 
 Description: Design für die Initiative Outdoor Aktivitäten
 Version: 1.0
-Author: Elvira Stein
-Author URI: http://www.elvirastein.com
-Tags: master, university, wien, responsive, modern
+Author: seriouspigeon
+Tags: master, university, wien, responsive
 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 html {
@@ -68,8 +67,9 @@ a {
   position: relative;
   width: 300px;
   padding: 50px;
+  margin-right: 44px;
   top: 0;
-  font-size: 1.2rem;
+  font-size: 20px;
 }
 
 .sidebar {
@@ -79,20 +79,24 @@ a {
 .sidebar--title {
   margin-bottom: 4rem;
 }
+.sidebar--title__logo {
+  margin-bottom: 3px;
+}
 .sidebar--title__logo img {
-  width: 110px;
+  width: 119px;
 }
 .sidebar--title a:hover {
   color: #232323 !important;
 }
 .sidebar--title__text p {
+  font-size: 20px;
   margin: 0;
 }
 .sidebar--navigation ul.menu {
   list-style: none;
   padding: 0;
   font-weight: bold;
-  line-height: 1.8;
+  line-height: 2.1;
 }
 .sidebar--navigation ul.menu > li.menu-item .sub-menu {
   list-style: none;
@@ -137,8 +141,9 @@ a {
   content: "";
 }
 .sidebar--navigation .small-menu {
+  line-height: 2.1;
   margin-top: 4rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .sidebar a {
   text-decoration: none;
@@ -234,7 +239,8 @@ a {
 #content {
   background: rgba(255, 255, 255, 0.85);
   padding: 50px;
-  margin: 50px 40px;
+  margin: 50px 40px 100px 0;
+  max-width: 850px;
 }
 #content h2 {
   font-size: 2rem;
@@ -276,6 +282,56 @@ a {
   #content p {
     font-size: 0.9rem;
     line-height: 1.38;
+  }
+}
+
+#frontpage-content {
+  padding: 0;
+  margin: 50px 40px 1rem 0;
+  max-width: 850px;
+  display: grid;
+  grid-gap: 31px 66px;
+  grid-template-columns: 1fr 1fr;
+}
+#frontpage-content .start-box {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#frontpage-content .start-box:nth-child(3) {
+  grid-column: span 2;
+}
+#frontpage-content .start-box--title {
+  font-size: 1.5rem;
+  color: #86ae36;
+  font-weight: bold;
+}
+#frontpage-content .start-box--content {
+  font-size: 1rem;
+  line-height: 1.25;
+}
+#frontpage-content .start-box--link {
+  margin-bottom: 1rem;
+}
+#frontpage-content .start-box--link a {
+  text-decoration: none;
+  color: #86ae36;
+}
+#frontpage-content .start-box--image {
+  width: 100%;
+  bottom: 0;
+}
+#frontpage-content .start-box--image img {
+  width: 100%;
+}
+@media (max-width: 720px) {
+  #frontpage-content {
+    display: block;
+  }
+  #frontpage-content .start-box {
+    margin-bottom: 2rem;
   }
 }
 

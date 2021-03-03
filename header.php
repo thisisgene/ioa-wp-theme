@@ -17,12 +17,10 @@
 	<title><?php wp_title('Initiative Outdoor Aktivitäten,', 'right'); ?></title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/ioa-new/style.css" />
-	<link href='https://fonts.googleapis.com/css?family=Roboto:300,700,300italic,700italic' rel='stylesheet' type='text/css'>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
-	<script src="https://use.fontawesome.com/ddbd68e35f.js"></script>
 
 
 	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
@@ -51,7 +49,10 @@
 		});
 	</script>
 
-	<?php wp_head(); ?>
+	<?php
+	include get_template_directory() . '/inc/favicons.php';
+	wp_head();
+	?>
 </head>
 
 <body <?php body_class(); ?> style="background-image: url('<?php echo get_background_custom(); ?>')">
