@@ -194,6 +194,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/assets/css/styles/2-layout/trainer.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/css/styles/2-layout/trainer.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/assets/favicons/android-icon-144x144.png": {
 		"ft": 32768,
 		"iS": 19114,
@@ -709,6 +722,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/sites/frontpage.php",
+		"oF": 0
+		},
+	"/sites/trainers.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/sites/trainers.php",
 		"oF": 0
 		},
 	"/style.css": {

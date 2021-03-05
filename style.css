@@ -329,10 +329,39 @@ a {
 @media (max-width: 720px) {
   #frontpage-content {
     display: block;
+    margin: 2rem;
   }
   #frontpage-content .start-box {
     margin-bottom: 2rem;
   }
+}
+
+.trainer-box {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.trainer-box--image {
+  width: 8rem;
+  height: 8rem;
+}
+.trainer-box--image img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+}
+.trainer-box .text-wrapper {
+  margin-left: 1rem;
+  color: #232323;
+}
+.trainer-box--text {
+  margin-bottom: 0.5rem;
+}
+.trainer-box--name {
+  font-weight: bold;
+}
+.trainer-box--bio p {
+  margin: 0;
+  line-height: 1.2 !important;
 }
 
 .footer-container {
