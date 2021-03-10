@@ -45,7 +45,12 @@
         //   display: block
         
       .current-menu-item, .current-menu-parent
-        
+        > a
+          &:after
+            transform: rotate(45deg)
+          &:hover:after
+                
+            transform: rotate(45deg) !important
         .sub-menu
           display: block !important
           a
@@ -62,6 +67,7 @@
     
       &#menu-side-menu
         & > li.menu-item 
+
           &:first-child
             a
               // display: inline-block
@@ -79,7 +85,7 @@
                 transition: transform 200ms ease-in-out
               &:hover
                 &:after
-                  transform: rotate(180deg)
+                  transform: rotate(135deg)
               
               
             .sub-menu li a:after

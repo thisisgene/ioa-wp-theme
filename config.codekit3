@@ -9,22 +9,6 @@
 	],
 "creatorBuild": "32137",
 "files": {
-	"/archive-referentin.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/archive-referentin.php",
-		"oF": 0
-		},
-	"/archive-trainerin.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/archive-trainerin.php",
-		"oF": 0
-		},
 	"/assets/css/main.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -689,6 +673,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/sites/frontpage.php",
+		"oF": 0
+		},
+	"/sites/referentinnen.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/sites/referentinnen.php",
 		"oF": 0
 		},
 	"/sites/trainers.php": {

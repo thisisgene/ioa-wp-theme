@@ -17,6 +17,8 @@ get_header(); ?>
 
 	if (is_page('trainer_innen')) {
 		include get_template_directory() . '/sites/trainers.php';
+	} elseif (is_page('referent_innen')) {
+		include get_template_directory() . '/sites/referentinnen.php';
 	} else {
 
 
