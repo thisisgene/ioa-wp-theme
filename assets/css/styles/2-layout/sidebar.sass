@@ -5,10 +5,13 @@
   // background: $black
   position: relative
   width: 300px
-  padding: 50px
+  padding: $main-margin
   margin-right: 44px
   top: 0
   font-size: 20px
+  @media(max-width: $first-breakpoint)
+    padding: $small-margin
+    margin-right: $small-margin
 .sidebar
   padding: 25px 21px 18px 25px
   background: rgba($white, .85)
@@ -26,7 +29,7 @@
       p
         font-size: 20px
         margin: 0
-
+  
   &--navigation
     ul.menu
       list-style: none

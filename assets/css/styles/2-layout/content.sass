@@ -3,8 +3,8 @@
 
 #content
   background: rgba($white, .85)
-  padding: 50px
-  margin: 50px 40px 100px 0
+  padding: $main-margin
+  margin: $main-margin 40px 100px 0
   max-width: 850px
   
   h2
@@ -29,6 +29,9 @@
     *
       margin: 0 !important
   
+  @media(max-width: $first-breakpoint)
+    padding: $small-margin
+    margin: $small-margin 40px 100px 0
   @media(max-width: $mobile-break-tablet)
     padding: 1.5rem
     margin: 1.5rem
@@ -48,11 +51,14 @@
 #frontpage-content
   // background: rgba($white, .85)
   padding: 0
-  margin: 50px 40px 1rem 0
+  margin: $main-margin 40px $main-margin 0
   max-width: 850px
   display: grid
   grid-gap: 31px 66px
   grid-template-columns: 1fr 1fr
+  @media(max-width: $first-breakpoint)
+    margin: $small-margin 40px $small-margin 0
+    grid-gap: 1rem 2rem
   .start-box
     
     padding: 1.5rem
@@ -81,8 +87,12 @@
       bottom: 0
       img
         width: 100%
-  
-  @media(max-width: 720px)
+  @media(max-width: $mobile-break-tablet)
+    // margin: 50px 40px 1rem
+    margin: $main-margin auto
+    padding: 0 1rem
+
+  @media(max-width: $mobile-break-phone)
     display: block
     margin: 2rem
     .start-box

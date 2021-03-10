@@ -12,7 +12,7 @@
 <div class="footer-container">
 	<footer class="footer">
 		<div class="footer-wrapper">
-			<div class="footer-logo footer-first-cell">
+			<div class="footer-logo footer-cell footer-first-cell">
 				<div class="footer-logo__img">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-ioa-outdoorbildung.png"" alt=" IOA Logo">
 				</div>
