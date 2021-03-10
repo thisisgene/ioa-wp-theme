@@ -3,7 +3,7 @@
 		<div class="sidebar--title">
 			<a href="/">
 				<div class="sidebar--title__logo">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/ioa-at-logo.png" alt="IOA Logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="IOA Logo">
 				</div>
 				<div class="sidebar--title__text">
 					<p>Initiative</p>

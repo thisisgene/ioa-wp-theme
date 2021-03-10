@@ -16,11 +16,57 @@ body.home
   width: 100%
 .footer
   display: flex
-  justify-content: space-evenly
+  justify-content: space-between
   align-items: center
   background: rgba($primary, .9)
   height: $footer-height
   width: 100%
-  padding: 0
+  padding: 0 2.5rem
+  box-sizing: border-box
+  color: $white
+  font-size: 14px
+  a
+    color: $white
+    text-decoration: none
   // box-sizing: padding-box
+  &-wrapper
+    width: 100%
+    max-width: 1200px
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    
   
+  &-logo
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &__img 
+      margin-top: 1rem
+      
+      img
+        height: 2.5rem
+  &-cell
+    
+    height: 100%
+    &__uni
+      img
+        height: 3rem
+  &-first-cell
+    display: flex
+    flex-direction: row
+    align-items: center
+    .footer-logo
+      &__img
+        margin-top: 0
+        img
+          margin-right: 1.5rem
+      &__text
+        line-height: 1.7
+  .text-title
+    font-weight: bold
+  &-impressum
+    width: 20%
+    display: flex
+    justify-content: flex-end
+    align-items: flex-end

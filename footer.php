@@ -11,11 +11,57 @@
 </div>
 <div class="footer-container">
 	<footer class="footer">
-		<div>
-			<p><strong>Initiative Outdoor Aktivitäten <sup>&reg;</sup></strong><br />Auf der Schmelz 6, 1150 Wien (Österreich)<br /><a href="mailto:fortbildung@ioa.at"><span class="fa fa-envelope-o" aria-hidden="true"></span>&ensp;fortbildung@ioa.at</a></p>
+		<div class="footer-wrapper">
+			<div class="footer-logo footer-first-cell">
+				<div class="footer-logo__img">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-ioa-outdoorbildung.png"" alt="">
+			</div>
+			<div class=" footer-logo__text">
+					<div class="text-title">Initiative Outdoor Aktivitäten <sup>&reg;</sup></div>
+					<div class="text-content">
+						Auf der Schmelz 6, 1150 Wien (Österreich)
+					</div>
+					<div class="text-link">
+						<a href="mailto:fortbildung@ioa.at">fortbildung@ioa.at</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-logo footer-cell">
+
+				<div class=" footer-logo__text">
+					<div class="text-title">Ropes Course Forum</div>
+				</div>
+				<div class="footer-logo__img">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-rcforum.png" alt="">
+				</div>
+			</div>
+			<div class="footer-logo footer-cell">
+
+				<div class=" footer-logo__text">
+					<div class="text-title">Outdoor Bildung</div>
+				</div>
+				<div class="footer-logo__img">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-ioa-outdoorbildung.png" alt="">
+				</div>
+			</div>
+
+			<div class="footer-logo footer-cell footer-cell__uni">
+
+				<div class=" footer-logo__text">
+					<div class="text-title">Postgraduate Center</div>
+				</div>
+				<div class="footer-logo__img">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-uni_wien-postgraduate_center.png" alt="">
+				</div>
+			</div>
 		</div>
-		<div class="rc-forum"><a href="http://www.ropescourse-forum.de" target="_blank"><img src="https://www.ioa.at/wp-content/themes/ioa/img/rc-forum-logo.png" /></a></div>
-		<div class="ioa-bildung"><a href="http://www.bildung-ioa.at" target="_blank"><img src="https://www.ioa.at/wp-content/themes/ioa/img/ioa-bildung-logo.png" /></a></div>
+
+
+		<div class="footer-impressum">
+			<a href="/impressum">Impressum</a>
+		</div>
+
+
 	</footer>
 </div>
 </body>

@@ -495,28 +495,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/assets/img/apflauer.jpeg": {
-		"ft": 16384,
-		"iS": 6613,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/img/apflauer.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/img/bg.jpg": {
-		"ft": 16384,
-		"iS": 2317945,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/img/bg.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"/assets/img/cross.png": {
 		"ft": 32768,
 		"iS": 1163,
@@ -528,44 +506,44 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/assets/img/ioa-at-logo.png": {
+	"/assets/img/logo-ioa-outdoorbildung.png": {
 		"ft": 32768,
-		"iS": 4733,
+		"iS": 6334,
 		"oA": 0,
-		"oAP": "/assets/img/ioa-at-logo.png",
+		"oAP": "/assets/img/logo-ioa-outdoorbildung.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/assets/img/ioa-bg.jpg": {
-		"ft": 16384,
-		"iS": 864397,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/assets/img/ioa-bg.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/assets/img/ioa-bildung-logo.png": {
+	"/assets/img/logo-rcforum.png": {
 		"ft": 32768,
-		"iS": 5865,
+		"iS": 12288,
 		"oA": 0,
-		"oAP": "/assets/img/ioa-bildung-logo.png",
+		"oAP": "/assets/img/logo-rcforum.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/assets/img/people-bg.png": {
+	"/assets/img/logo-uni_wien-postgraduate_center.png": {
 		"ft": 32768,
-		"iS": 1552,
+		"iS": 26792,
 		"oA": 0,
-		"oAP": "/assets/img/people-bg.png",
+		"oAP": "/assets/img/logo-uni_wien-postgraduate_center.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/logo.png": {
+		"ft": 32768,
+		"iS": 6356,
+		"oA": 0,
+		"oAP": "/assets/img/logo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -581,17 +559,6 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
-		},
-	"/assets/img/rc-forum-logo.png": {
-		"ft": 32768,
-		"iS": 9115,
-		"oA": 0,
-		"oAP": "/assets/img/rc-forum-logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"/assets/img/toggle.svg": {
 		"ft": 2097152,
@@ -697,14 +664,14 @@
 		"oAP": "/page.php",
 		"oF": 0
 		},
-	"/screenshot.png": {
+	"/Screenshot.png": {
 		"ft": 32768,
-		"iS": 1105127,
+		"iS": 2114656,
 		"oA": 0,
 		"oAP": "/screenshot.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
